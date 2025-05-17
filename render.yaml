@@ -8,4 +8,4 @@ services:
       - key: SPRING_PROFILES_ACTIVE
         value: prod
       - key: SPRING_DATA_MONGODB_URI
-        sync: false
+        value: mongodb+srv://Maroun2410:MarounMelhem.2410@cluster0.egwuuje.mongodb.net/finalprojectdb?retryWrites=true&w=majority
