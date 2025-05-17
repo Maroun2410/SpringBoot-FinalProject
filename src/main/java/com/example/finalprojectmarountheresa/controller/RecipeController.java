@@ -57,6 +57,11 @@ public class RecipeController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
+    @GetMapping("/")
+    public String home() {
+        return "Welcome to the Final Project API!";
+    }
+
     @PutMapping("/{id}")
     public ResponseEntity<Recipe> updateRecipe(@PathVariable String id, @Valid @RequestBody Recipe updated) {
         return recipeRepository.findById(id).map(existing -> {
